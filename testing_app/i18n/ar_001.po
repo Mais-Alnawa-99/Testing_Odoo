@@ -1,0 +1,299 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* testing_app
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-01 08:43+0000\n"
+"PO-Revision-Date: 2024-10-01 08:43+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: testing_app
+#: model:ir.model.fields,field_description:testing_app.field_res_partner__age
+#: model:ir.model.fields,field_description:testing_app.field_res_users__age
+#: model:ir.model.fields,field_description:testing_app.field_stambach_test__patient_age
+#: model:ir.model.fields,field_description:testing_app.field_test_line__age
+msgid "Age"
+msgstr "العمر"
+
+#. module: testing_app
+#: model_terms:ir.ui.view,arch_db:testing_app.view_test_record_form
+msgid "Amount Paid"
+msgstr "المبلغ المدفوع"
+
+#. module: testing_app
+#: model_terms:ir.ui.view,arch_db:testing_app.view_test_record_form
+msgid "Amount Rest"
+msgstr "المبلغ المتبقي"
+
+#. module: testing_app
+#: model:ir.model.fields,field_description:testing_app.field_stambach_test__amount_paid
+msgid "Amount _Paid"
+msgstr "المبلغ المدفوع"
+
+#. module: testing_app
+#: model:ir.model.fields,field_description:testing_app.field_stambach_test__amount_rest
+msgid "Amount _rest"
+msgstr "المبلغ المتبقي"
+
+#. module: testing_app
+#: model:ir.model.fields,field_description:testing_app.field_test_line__avg
+msgid "Average"
+msgstr "المتوسط حسابي"
+
+#. module: testing_app
+#: model:ir.model.fields,field_description:testing_app.field_stambach_test__avg
+msgid "Avg"
+msgstr "متوسط حسابي"
+
+#. module: testing_app
+#: model:ir.model.fields,field_description:testing_app.field_data_test__create_uid
+#: model:ir.model.fields,field_description:testing_app.field_stambach_test__create_uid
+#: model:ir.model.fields,field_description:testing_app.field_test_line__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: testing_app
+#: model:ir.model.fields,field_description:testing_app.field_data_test__create_date
+#: model:ir.model.fields,field_description:testing_app.field_stambach_test__create_date
+#: model:ir.model.fields,field_description:testing_app.field_test_line__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: testing_app
+#: model:ir.model.fields,field_description:testing_app.field_res_partner__date_birthday
+#: model:ir.model.fields,field_description:testing_app.field_res_users__date_birthday
+msgid "Date of Birth"
+msgstr "تاريخ الميلاد"
+
+#. module: testing_app
+#: model:ir.model.fields,field_description:testing_app.field_test_line__diva
+msgid "Deviation"
+msgstr "الانحراف المعياري"
+
+#. module: testing_app
+#: model:ir.model.fields,field_description:testing_app.field_data_test__display_name
+#: model:ir.model.fields,field_description:testing_app.field_stambach_test__display_name
+#: model:ir.model.fields,field_description:testing_app.field_test_line__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: testing_app
+#: model:ir.model.fields,field_description:testing_app.field_stambach_test__diva
+msgid "Diva"
+msgstr "الانحراف المعياري"
+
+#. module: testing_app
+#: model:ir.model.fields,field_description:testing_app.field_data_test__id
+#: model:ir.model.fields,field_description:testing_app.field_stambach_test__id
+#: model:ir.model.fields,field_description:testing_app.field_test_line__id
+msgid "ID"
+msgstr ""
+
+#. module: testing_app
+#: model:ir.model.fields,field_description:testing_app.field_data_test__write_uid
+#: model:ir.model.fields,field_description:testing_app.field_stambach_test__write_uid
+#: model:ir.model.fields,field_description:testing_app.field_test_line__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: testing_app
+#: model:ir.model.fields,field_description:testing_app.field_data_test__write_date
+#: model:ir.model.fields,field_description:testing_app.field_stambach_test__write_date
+#: model:ir.model.fields,field_description:testing_app.field_test_line__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: testing_app
+#: model_terms:ir.ui.view,arch_db:testing_app.view_test_record_form
+msgid "Level Result"
+msgstr "مستوى المهارة"
+
+#. module: testing_app
+#: model:ir.model.fields,field_description:testing_app.field_stambach_test__level_result
+msgid "Level_result"
+msgstr "مستوى المهارة"
+
+#. module: testing_app
+#: model:ir.model.fields,field_description:testing_app.field_data_test__line
+msgid "Line"
+msgstr "المهارة"
+
+#. module: testing_app
+#: model_terms:ir.ui.view,arch_db:testing_app.view_test_record_form
+msgid "Name"
+msgstr " المريض"
+
+#. module: testing_app
+#: model_terms:ir.ui.view,arch_db:testing_app.view_test_record_form
+msgid "Patient Age"
+msgstr "عمر المريض"
+
+#. module: testing_app
+#: model_terms:ir.ui.view,arch_db:testing_app.partner_form
+msgid "Patient Form"
+msgstr ""
+
+#. module: testing_app
+#: model:ir.model.fields,field_description:testing_app.field_res_partner__name
+#: model:ir.model.fields,field_description:testing_app.field_res_users__name
+#: model:ir.model.fields,field_description:testing_app.field_stambach_test__name
+msgid "Patient Name"
+msgstr "الاسم"
+
+#. module: testing_app
+#: model:ir.model.fields,field_description:testing_app.field_res_partner__test_ids
+#: model:ir.model.fields,field_description:testing_app.field_res_users__test_ids
+#: model_terms:ir.ui.view,arch_db:testing_app.partner_form
+msgid "Patient Tests"
+msgstr "اختبارات المريض"
+
+#. module: testing_app
+#: model:ir.model.fields,field_description:testing_app.field_data_test__price
+#: model:ir.model.fields,field_description:testing_app.field_stambach_test__price
+#: model_terms:ir.ui.view,arch_db:testing_app.view_test_record_form
+msgid "Price"
+msgstr "السعر "
+
+#. module: testing_app
+#: model_terms:ir.ui.view,arch_db:testing_app.view_test_record_form
+msgid "Recompute Result"
+msgstr "اعادة حساب الاختبار"
+
+#. module: testing_app
+#: model:ir.actions.act_window,name:testing_app.patient_record_action
+#: model:ir.ui.menu,name:testing_app.record_patient_menu
+msgid "Record Patient"
+msgstr "ملف المريض"
+
+#. module: testing_app
+#: model:ir.model.fields,field_description:testing_app.field_stambach_test__result
+#: model_terms:ir.ui.view,arch_db:testing_app.view_test_record_form
+msgid "Result"
+msgstr "نتيجة الاختبار"
+
+#. module: testing_app
+#: model_terms:ir.ui.view,arch_db:testing_app.view_test_record_form
+msgid "Row Score"
+msgstr "الدرجة الخام"
+
+#. module: testing_app
+#: model:ir.model.fields,field_description:testing_app.field_stambach_test__row_score
+msgid "Row_Degree"
+msgstr "الدرجة الخام"
+
+#. module: testing_app
+#: model_terms:ir.ui.view,arch_db:testing_app.view_test_record_form
+msgid "Save Result"
+msgstr "حفظ التيجة"
+
+#. module: testing_app
+#: model:ir.model.fields,field_description:testing_app.field_data_test__name
+msgid "Skill"
+msgstr "المهارة"
+
+#. module: testing_app
+#: model:ir.model.fields,field_description:testing_app.field_stambach_test__data_test_id
+msgid "Skill Type"
+msgstr "نوع المهارة"
+
+#. module: testing_app
+#: model:ir.model.fields,field_description:testing_app.field_stambach_test__state_paid
+#: model_terms:ir.ui.view,arch_db:testing_app.view_test_record_form
+msgid "State Paid"
+msgstr "حالة الدفع"
+
+#. module: testing_app
+#: model:ir.model.fields,field_description:testing_app.field_res_partner__state_patient
+#: model:ir.model.fields,field_description:testing_app.field_res_users__state_patient
+msgid "State Patient"
+msgstr "حالة مرضية"
+
+#. module: testing_app
+#: model:ir.model.fields,field_description:testing_app.field_test_line__test_id
+msgid "Test"
+msgstr "اختبار ستامباك"
+
+#. module: testing_app
+#: model_terms:ir.ui.view,arch_db:testing_app.view_test_record_form
+msgid "Test ID"
+msgstr " نوع المهارة"
+
+#. module: testing_app
+#: model_terms:ir.ui.view,arch_db:testing_app.view_test_record_form
+msgid "Test Stambach"
+msgstr "اختبار ستامباك"
+
+#. module: testing_app
+#: model:ir.ui.menu,name:testing_app.testing_menu
+msgid "Testing"
+msgstr "تطبيق الاختبار"
+
+#. module: testing_app
+#: model:ir.model.fields,field_description:testing_app.field_res_partner__date_today
+#: model:ir.model.fields,field_description:testing_app.field_res_users__date_today
+#: model:ir.model.fields,field_description:testing_app.field_stambach_test__date_today
+msgid "Today Date"
+msgstr "تاريخ اليوم"
+
+#. module: testing_app
+#: model_terms:ir.ui.view,arch_db:testing_app.view_test_record_form
+msgid "Total Invoice"
+msgstr "المبلغ الاجمالي"
+
+#. module: testing_app
+#: model:ir.model.fields,field_description:testing_app.field_stambach_test__total_invoice
+msgid "Total_Invoice"
+msgstr "المبلغ الاجمالي"
+
+#. module: testing_app
+#: model:ir.actions.act_window,name:testing_app.data_action
+msgid "data action"
+msgstr "عرض المهارات"
+
+#. module: testing_app
+#: model:ir.model,name:testing_app.model_data_test
+msgid "data for test"
+msgstr ""
+
+#. module: testing_app
+#: model:ir.model,name:testing_app.model_test_line
+msgid "data test line"
+msgstr "خصائص المهارة"
+
+#. module: testing_app
+#: model:ir.ui.menu,name:testing_app.data_menu
+msgid "data_table"
+msgstr "فئات المهارة"
+
+#. module: testing_app
+#: model:ir.model,name:testing_app.model_res_partner
+msgid "form patient"
+msgstr "جهة الاتصال"
+
+#. module: testing_app
+#: model_terms:ir.ui.view,arch_db:testing_app.data_view_form
+msgid "skill"
+msgstr "مهارة"
+
+#. module: testing_app
+#: model:ir.model,name:testing_app.model_stambach_test
+msgid "stambach test"
+msgstr "اختبار ستامباك"
+
+#. module: testing_app
+#: model:ir.actions.act_window,name:testing_app.test_action
+msgid "test action"
+msgstr "عرض الاختبار"
+
+#. module: testing_app
+#: model:ir.ui.menu,name:testing_app.test_menu
+msgid "test_ table"
+msgstr "الاختبار"

@@ -1,0 +1,92 @@
+<odoo>
+    <record id="test_view_tree" model="ir.ui.view">
+        <field name="name">test tree</field>
+        <field name="model">stambach.test</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="patient_age"/>
+                 <field name="row_score"/>
+                <field name="data_test_id"/>
+                <field name="amount_paid"/>
+                <field name="price_with_symbol"/>
+                <field name="result"/>
+                <field name="level_result"/>
+            </tree>
+        </field>
+    </record>
+    <record id="view_test_record_form" model="ir.ui.view">
+        <field name="name">test.record.form</field>
+        <field name="model">stambach.test</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_recompute_result" type="object" string="Recompute Result" class="btn-primary"/>
+                    <button name="save" type="object" string="Save Test" class="btn-secondary"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group string="Test Stambach" class="testing_class">
+                            <table style="width: 100%; border-collapse: collapse;">
+                                <tr>
+                                    <th style="border: 2px solid #000; padding: 20px;">Name Patient</th>
+                                    <th style="border: 2px solid #000; padding: 20px;">Patient Age</th>
+                                    <th style="border: 2px solid #000; padding: 20px;">Row Score</th>
+                                    <th style="border: 2px solid #000; padding: 20px;">Skill Type</th>
+                                    <th style="border: 2px solid #000; padding: 20px;">Amount Paid</th>
+                                    <th style="border: 2px solid #000; padding: 20px;">Result</th>
+                                    <th style="border: 2px solid #000; padding: 20px;">Level Result</th>
+                                    <th style="border: 2px solid #000; padding: 20px;">Service Price</th>
+
+                                </tr>
+                                <tr>
+                                    <td style="border: 2px solid #000; padding: 2px; width: 100px; white-space:normal;">
+                                        <field name="name" options="{'no_open': True}"/>
+                                    </td>
+                                    <td style="border: 2px solid #000; padding: 20px;"><field name="patient_age"/></td>
+                                    <td style="border: 2px solid #000; padding: 20px;"><field name="row_score"/></td>
+                                    <td style="border: 2px solid #000; padding: 2px; width: 100px; white-space:normal;">
+                                        <field name="data_test_id" options="{'no_open': True}"/>
+                                    </td>
+                                    <td style="border: 2px solid #000; padding: 20px;"><field name="amount_paid"/></td>
+                                    <td style="border: 2px solid #000; padding: 20px;"><field name="result"/></td>
+                                    <td style="border: 2px solid #000; padding: 20px;"><field name="level_result"/></td>
+                                    <td style="border: 2px solid #000; padding: 20px;">
+                                        <field name="price_with_symbol"/>
+                                    </td>
+
+                                </tr>
+                            </table>
+                        </group>
+                    </group>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="button_open_invoice_entry" type="object" class="oe_stat_button" icon="fa-bars">
+                            <div class="o_stat_info">
+                                <span class="o_stat_text">Invoice_Entry</span>
+                            </div>
+                        </button>
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="test_action" model="ir.actions.act_window" >
+         <field name="name" >test action</field>
+         <field name="res_model" >stambach.test</field>
+
+    </record>
+
+    <menuitem
+           id="testing_menu"
+           name="Testing"
+    />
+    <menuitem
+           id="test_menu"
+           name="test_ table"
+           parent="testing_menu"
+           action="test_action"
+
+    />
+
+</odoo>

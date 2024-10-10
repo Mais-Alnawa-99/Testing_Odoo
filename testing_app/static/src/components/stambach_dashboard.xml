@@ -1,0 +1,88 @@
+<templates xml:space="preserve">
+    <t t-name="owl.OwlStambachDashboard" owl="1">
+        <div class="vh-100 overflow-auto bg-muted">
+            <div class="row m-3">
+                <div class="col-lg-7">
+                    <div class="row">
+                        <div class="col m-0 p-0">
+                            <div class="shadow-sm border m-2 p-2 bg-white">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h1 class="text-primary fw-bold">Stambach Test Dashboard</h1>
+                                    <div>
+                                        <select class="form-select" t-model="state.period" t-on-change="onChangePeriod">
+                                            <option value="0">Select Period</option>
+                                            <option value="7">Last 7 Days</option>
+                                            <option value="30">Last 30 Days</option>
+                                            <option value="90">Last 90 Days</option>
+                                            <option value="365">Last 365 Days</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <KpiCard t-on-click="handleServiceClick" name="'Services'" value="state.services.value" percentage="state.services.percentage"/>
+                        <KpiCard t-on-click="handlePatientClick" name="'Patients'" value="state.patients.value" percentage="state.patients.percentage"/>
+                        <KpiCard t-on-click="handleTestClick" name="'Tests'" value="state.tests.value" percentage="state.tests.percentage"/>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-lg-6 m-0 p-0">
+                            <div class="shadow-sm border m-2 p-4 bg-white">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h3 class="text-primary fw-bold">Top Services</h3>
+                                    <div class="px-3 py-1 bg-primary cursor-pointer" t-on-click="handleServiceClick">
+                                        <span class="fa fa-arrow-right text-white"/>
+                                    </div>
+                                </div>
+
+                                <ChartRenderer type="'doughnut'" title="'Top Services Report'"
+                                    data="state.services.data" colors="['#FF6384', '#36A2EB', '#FFCE56']"
+                                    style="'height: 1000px; width: 100%;'"/>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 m-0 p-0">
+                            <div class="shadow-sm border m-2 p-4 bg-white">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h3 class="text-primary fw-bold">Top Patients using Testing</h3>
+                                    <div class="px-3 py-1 bg-primary cursor-pointer" t-on-click="handlePatientClick">
+                                        <span class="fa fa-arrow-right text-white"/>
+                                    </div>
+                                </div>
+
+                                <ChartRenderer type="'pie'" title="'Top Patients using Testing Report'"
+                                    data="state.patients.data" colors="['#FFCE56', '#4BC0C0', '#FF6384']"
+                                    style="'height: 1000px; width: 100%;'"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-5 m-0 p-0">
+                    <div class="row">
+                        <div class="col m-0 p-0">
+                            <div class="shadow-sm border m-2 p-4 bg-white">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h3 class="text-primary fw-bold">Monthly Testing</h3>
+                                    <div class="px-3 py-1 bg-primary cursor-pointer" t-on-click="handleTestClick">
+                                        <span class="fa fa-arrow-right text-white"/>
+                                    </div>
+                                </div>
+
+                                <ChartRenderer type="'bar'" title="'Monthly Testing Report'"
+                                    data="state.tests.monthlyData" colors="['#FF6384']"
+                                    style="'height: 1000px; width: 100%;'"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>

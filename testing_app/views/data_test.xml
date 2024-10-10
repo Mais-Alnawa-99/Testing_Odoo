@@ -1,0 +1,54 @@
+<odoo>
+    <record id="data_view_tree" model="ir.ui.view">
+        <field name="name">data tree</field>
+        <field name="model">data.test</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+    <record id="data_view_form" model="ir.ui.view">
+        <field name="name">data form</field>
+        <field name="model">data.test</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="currency_id"/>
+                            <field name="test_fee"/>
+
+                        </group>
+                    </group>
+                     <notebook>
+                        <page string="skill">
+                            <field name="line">
+                                <tree editable="bottom">
+                                    <field name="age"/>
+                                    <field name="avg"/>
+                                    <field name="diva"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="data_action" model="ir.actions.act_window" >
+         <field name="name" >data action</field>
+         <field name="res_model" >data.test</field>
+
+    </record>
+    <menuitem
+           id="data_menu"
+           name="data_table"
+           parent="testing_menu"
+           action="data_action"
+
+    />
+
+</odoo>

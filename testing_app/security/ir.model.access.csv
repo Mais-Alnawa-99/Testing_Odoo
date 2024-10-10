@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_data.test,access_data.test,model_data_test,,1,1,1,1
+access_test.line,access_test.line,model_test_line,,1,1,1,1
+access_test,access_test,model_stambach_test,,1,1,1,1
+
+
+
+

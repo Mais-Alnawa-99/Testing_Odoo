@@ -1,0 +1,80 @@
+<odoo>
+    <record id="partner_tree" model="ir.ui.view">
+        <field name="name">partner tree</field>
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="age"/>
+                <field name="date_birthday"/>
+                <field name="state_patient"/>
+                <field name="phone"/>
+                <field name="email"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="partner_form" model="ir.ui.view">
+        <field name="name">partner form</field>
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+            <form string="Patient Form">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="age"/>
+                            <field name="date_birthday"/>
+                            <field name="state_patient"/>
+                            <field name="phone"/>
+                            <field name="email"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Patient Tests">
+                            <field name="test_ids">
+                                <tree>
+                                    <field name="data_test_id"/>
+                                    <field name="row_score"/>
+                                    <field name="result"/>
+                                    <field name="level_result"/>
+                                    <field name="date_today"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Invoices">
+                            <field name="invoice_ids" nolabel="1">
+                                <tree editable="bottom">
+                                    <field name="partner_id"/>
+                                    <field name="invoice_date"/>
+                                    <field name="amount_total"/>
+                                    <field name="state"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Payments">
+                            <field name="payment_ids" nolabel="1">
+                                <tree editable="bottom">
+                                    <field name="amount"/>
+                                    <field name="payment_type"/>
+                                    <field name="payment_method_id"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="patient_record_action" model="ir.actions.act_window">
+        <field name="name">Record Patient</field>
+        <field name="res_model">res.partner</field>
+        <field name="domain">[('state_patient', '=', True)]</field>
+    </record>
+
+    <menuitem id="record_patient_menu"
+              name="Record Patient"
+              parent="testing_menu"
+              action="patient_record_action"/>
+</odoo>
