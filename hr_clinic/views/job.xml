@@ -1,0 +1,15 @@
+<odoo>
+    <record id="job_record_action" model="ir.actions.act_window">
+        <field name="name">Jobs</field>
+        <field name="res_model">hr.job</field>
+
+    </record>
+    <menuitem
+           id="job_clinic_menu"
+           name="Jobs Clinic"
+           parent="hr_menu_employee"
+           action="job_record_action"
+
+    />
+
+</odoo>

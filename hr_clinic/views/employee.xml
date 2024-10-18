@@ -1,0 +1,55 @@
+<odoo>
+    <record id="view_employee_form_inherit" model="ir.ui.view">
+        <field name="name">employee inherit</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='parent_id']" position="after">
+                <field name="is_employee"/>
+            </xpath>
+            <xpath expr="//notebook" position="inside">
+                <page name="payslips" string="Payslips">
+                    <field name="payslip_ids"/>
+                </page>
+            </xpath>
+            <xpath expr="//field[@name='work_email']" position="after">
+                <field name="work_location"/>
+            </xpath>
+            <xpath expr="//field[@name='coach_id']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//page[@name='hr_settings']" position="replace">
+               <page name="hr_settings" string="HR Settings" groups="hr.group_hr_user">
+                    <group>
+                        <group string="Status" name="active_group">
+                            <field name="employee_type"/>
+                            <field name="pin"/>
+                            <field name="barcode"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+             <xpath expr="//page[@name='public']" position="attributes">
+                 <attribute name="invisible">1</attribute>
+             </xpath>
+        </field>
+    </record>
+    <record id="employee_record_action" model="ir.actions.act_window">
+        <field name="name">Employees</field>
+        <field name="res_model">hr.employee</field>
+        <field name="domain">[('is_employee', '=', True)]</field>
+
+    </record>
+    <menuitem
+            id="hr_menu_employee"
+            name="Hr Clinic employees"
+    />
+    <menuitem
+           id="hr_clinic_menu"
+           name="Employees Clinic"
+           parent="hr_menu_employee"
+           action="employee_record_action"
+
+    />
+
+</odoo>

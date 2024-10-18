@@ -42,7 +42,7 @@
 
                                 <ChartRenderer type="'doughnut'" title="'Top Services Report'"
                                     data="state.services.data" colors="['#FF6384', '#36A2EB', '#FFCE56']"
-                                    style="'height: 1000px; width: 100%;'"/>
+                                    style="'height: 800px; width: 100%;'"/>
                             </div>
                         </div>
 
@@ -57,7 +57,7 @@
 
                                 <ChartRenderer type="'pie'" title="'Top Patients using Testing Report'"
                                     data="state.patients.data" colors="['#FFCE56', '#4BC0C0', '#FF6384']"
-                                    style="'height: 1000px; width: 100%;'"/>
+                                    style="'height: 800px; width: 100%;'"/>
                             </div>
                         </div>
                     </div>

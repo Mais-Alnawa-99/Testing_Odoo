@@ -1,0 +1,15 @@
+<odoo>
+    <record id="department_record_action" model="ir.actions.act_window">
+        <field name="name">Department</field>
+        <field name="res_model">hr.department</field>
+
+    </record>
+    <menuitem
+           id="department_clinic_menu"
+           name="Departments Clinic"
+           parent="hr_menu_employee"
+           action="department_record_action"
+
+    />
+
+</odoo>
