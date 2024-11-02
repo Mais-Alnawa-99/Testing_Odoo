@@ -19,6 +19,7 @@
             'testing_app/static/src/components/**/*.js',
             'testing_app/static/src/components/**/*.xml',
             'testing_app/static/src/components/**/*.scss',
+            'testing_app/static/src/css/style.css',
 
 
         ]

@@ -33,7 +33,7 @@
                     <notebook>
                         <page string="Patient Tests">
                             <field name="test_ids">
-                                <tree>
+                                <tree class="custom_class">
                                     <field name="data_test_id"/>
                                     <field name="row_score"/>
                                     <field name="result"/>

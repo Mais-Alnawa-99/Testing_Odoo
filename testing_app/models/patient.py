@@ -20,6 +20,7 @@ class Patient(models.Model):
 
 
 
+
     @api.depends('date_birthday')
     def _compute_age(self):
         for rec in self:
